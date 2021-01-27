@@ -1,0 +1,27 @@
+body {
+    margin: 0px;
+    background-color: #222222;
+}
+
+#top-navbar {
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar-brand {
+    font-family: Helvetica;
+}
+
+#navbar-navigation {
+    display: flex;
+}
+
+#nav-list {
+    display: flex;
+    list-style: none;
+}
+
+#nav-list a {
+    margin: 4px;
+}
