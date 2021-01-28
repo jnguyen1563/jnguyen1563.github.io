@@ -1,27 +1,105 @@
+/* General Styling */
+
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    margin: 0px;
+    background-color: white;
+    width: 100%;
+}
+
+header {
     background-color: #222222;
+    height: 100%;
+    width: 100%;
+    position: fixed;
 }
 
-#top-navbar {
-    background-color: lightseagreen;
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    background-color: white;
+    width: 100%;
+    position: static;
+}
+
+/* Typography */
+
+/* Intro */
+
+.intro {
+    color: white;
+    justify-items: center;
+    align-content: center;
+}
+
+.intro h1 {
+    text-align: center;
+    font-family: Arial;
+    font-size: 50px;
+}
+
+.intro .heading-sep {
+    background-color: white;
+    display: block;
+    width: 200px;
+    height: 2px;
+}
+
+.intro h2 {
+    color: lightseagreen;
+    text-align: center; 
+}
+
+.intro h2 strong {
+    color: #FFF;
+}
+
+/* Navbar */
+
+.navbar {
+    align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    overflow: hidden;
 }
 
-#navbar-brand {
-    font-family: Helvetica;
-}
-
-#navbar-navigation {
+.navbar__brand {
     display: flex;
 }
 
-#nav-list {
-    display: flex;
-    list-style: none;
+.navbar__brand a {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #f2f2f2;
+    padding: 10px 20px;
 }
 
-#nav-list a {
-    margin: 4px;
+.navbar__nav {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar__nav a {
+    border-bottom: solid lightseagreen;
+    display: flex;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+}
+
+.navbar__nav a:hover {
+    background-color: rgb(27, 141, 135);
+    border-bottom: solid black;
+    border-radius: 6px;
+    color: black;
 }
