@@ -7,18 +7,6 @@
     padding: 0;
 }
 
-body {
-    background-color: white;
-    width: 100%;
-}
-
-header {
-    background-color: #222222;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -29,49 +17,17 @@ main {
     position: static;
 }
 
-/* Typography */
-
-/* Intro */
-
-.intro {
-    color: white;
-    justify-items: center;
-    align-content: center;
-}
-
-.intro h1 {
-    text-align: center;
-    font-family: Arial;
-    font-size: 50px;
-}
-
-.intro .heading-sep {
-    background-color: white;
-    display: block;
-    width: 200px;
-    height: 2px;
-}
-
-.intro h2 {
-    color: lightseagreen;
-    text-align: center; 
-}
-
-.intro h2 strong {
-    color: #FFF;
-}
-
 /* Navbar */
 
 .navbar {
     align-items: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     overflow: hidden;
-}
-
-.navbar__brand {
-    display: flex;
+    position: fixed;
+    top: 0;
+    padding: 50px 0px;
+    width: 100vw;
 }
 
 .navbar__brand a {
@@ -79,7 +35,7 @@ main {
     font-size: 30px;
     text-align: center;
     text-decoration: none;
-    color: #f2f2f2;
+    color: #ffffff;
     padding: 10px 20px;
 }
 
@@ -89,17 +45,104 @@ main {
 }
 
 .navbar__nav a {
-    border-bottom: solid lightseagreen;
-    display: flex;
-    color: #f2f2f2;
+    color: #ffffffaa;
     text-align: center;
-    padding: 10px 14px;
+    margin: 14px 16px;
+    padding: 2px 4px;
     text-decoration: none;
 }
 
 .navbar__nav a:hover {
-    background-color: rgb(27, 141, 135);
-    border-bottom: solid black;
-    border-radius: 6px;
-    color: black;
+    color: #ffffffff;
+    border-bottom: solid lightseagreen;
+}
+
+/* Intro */
+
+.intro {
+    align-items: center;
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.intro-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    justify-content: center;
+}
+
+.intro-wrapper h1 {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 4em;
+}
+
+.intro-wrapper h2 {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.intro-wrapper h2 span {
+    color: lightseagreen;
+    font-size: 1em;
+    margin: 0em 0.25em;
+}
+
+.intro-wrapper .heading-sep {
+    background-color: lightseagreen;
+    margin: 20px;
+    width: 300px;
+    height: 4px;
+}
+
+.intro-wrapper .about-btn {
+    background-color: lightseagreen;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.25em;
+    margin: 20px 0px;
+    padding: 6px 10px;
+    text-decoration: none;
+}
+
+.intro-wrapper .about-btn:hover {
+    background-color: rgb(26, 148, 142);
+}
+
+/* Content Sections */
+.content {
+    text-align: center;
+    height: 60vh;
+    width: 100vw;
+}
+
+/* About Section */
+
+#about {
+    background-color: white;
+}
+
+/* Skills Section */
+#skills {
+    background-color: lightgray;
+}
+
+/* Experience Section */
+
+#experience {
+    background-color: white;
+}
+
+/* Contact Section */
+
+#contact {
+    background-color: lightgray;
 }
