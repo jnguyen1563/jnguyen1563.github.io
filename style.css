@@ -146,3 +146,10 @@ main {
 #contact {
     background-color: lightgray;
 }
+
+/* Footer */
+.footer {
+    background-color: #222222;
+    width: 100vw;
+    height: 10vh;
+}
