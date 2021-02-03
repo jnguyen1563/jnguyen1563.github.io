@@ -129,7 +129,6 @@ html {
 /* Content Sections */
 .content {
     text-align: center;
-    height: 60vh;
     width: 100vw;
     padding: 60px;
 }
@@ -150,8 +149,17 @@ html {
 .content__header .title-sep {
     background-color: lightseagreen;
     height: 2px;
-    margin: 0.5em 0;
+    margin: 0.5em 0 2em 0;
     width: 10em;
+}
+
+.content__grid {
+    display:grid;
+    justify-content: center;
+}
+
+.content-section {
+    text-align: center;
 }
 
 .section-even {
