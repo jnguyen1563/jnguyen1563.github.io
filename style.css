@@ -16,6 +16,7 @@ html {
 .navbar {
     /* Custom attributes to be inverted */
     --background: transparent;
+    --brand-visibility: hidden;
     --text-color-idle: #ffffffaa;
     --text-color-solid: #ffffff;
 
@@ -31,11 +32,13 @@ html {
 }
 
 .navbar__brand a {
-    color: var(--text-color-solid);
+    color: #000000aa;
+    font-family: 'Roboto', Helvetica, sans-serif;
     font-size: 2em;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    padding: 10px 20px;
+    visibility: var(--brand-visibility);
 }
 
 .navbar__nav {
@@ -60,6 +63,7 @@ html {
 
 .navbar-invert {
     --background: #ffffff;
+    --brand-visibility: visible;
     --text-color-idle: #000000aa;
     --text-color-solid: #000000ff;
     box-shadow: 0px 1px 2px;
@@ -128,9 +132,8 @@ html {
 
 /* Content Sections */
 .content {
-    text-align: center;
     width: 100vw;
-    padding: 60px;
+    padding: 3em; 
 }
 
 .content__header {
@@ -153,13 +156,9 @@ html {
     width: 10em;
 }
 
-.content__grid {
-    display:grid;
-    justify-content: center;
-}
-
-.content-section {
-    text-align: center;
+.content__container {
+    margin: 0 auto;
+    max-width: 70%;
 }
 
 .section-even {
@@ -169,6 +168,34 @@ html {
 .section-odd {
     background-color: #eee;
 }
+
+/* About */
+#about-main {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-areas: 'portrait text';
+    overflow: hidden;
+}
+
+#portrait {
+    grid-area: portrait;
+}
+
+#portrait img {
+    height: 400px;
+    max-width: 100%;
+}
+
+#about-text {
+    grid-area: text;
+}
+
+#about-text h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
 
 /* Footer */
 .footer {
