@@ -196,6 +196,34 @@ html {
     margin-bottom: 1em;
 }
 
+/* Skills Section */
+#skills-main {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-areas: 'summary summary summary summary'
+                         'languages technologies algorithms learning';
+    overflow: hidden;
+}
+
+#skills-summary {
+
+}
+
+#programming-languages {
+
+}
+
+#technologies {
+
+}
+
+#ml-algorithms {
+
+}
+
+#things-to-learn {
+    
+}
 
 /* Footer */
 .footer {
