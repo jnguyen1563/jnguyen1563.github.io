@@ -198,31 +198,47 @@ html {
 
 /* Skills Section */
 #skills-main {
+    align-content: center;
     display: grid;
     grid-gap: 2em;
     grid-template-areas: 'summary summary summary summary'
-                         'languages technologies algorithms learning';
+    'languages technologies algorithms learning';
+    justify-content: center;
     overflow: hidden;
+    padding: 1em;
+}
+
+.bullet-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list-sep {
+    background-color: lightseagreen;
+    height: 1px;
+    margin: 0.5em 0;
+    width: 10em;
 }
 
 #skills-summary {
-
+    grid-area: summary;
 }
 
 #programming-languages {
-
+    grid-area: languages;
 }
 
 #technologies {
-
+    grid-area: technologies;
 }
 
 #ml-algorithms {
-
+    grid-area: algorithms;
 }
 
 #things-to-learn {
-    
+    grid-area: learning;
 }
 
 /* Footer */
