@@ -11,6 +11,10 @@ html {
     scroll-behavior: smooth;
 }
 
+p {
+    line-height: 1.4;
+}
+
 /* Navbar */
 
 .navbar {
@@ -200,7 +204,8 @@ html {
 #skills-main {
     align-content: center;
     display: grid;
-    grid-gap: 2em;
+    grid-row-gap: 4em;
+    grid-column-gap: 4em;
     grid-template-areas: 'summary summary summary summary'
     'languages technologies algorithms learning';
     justify-content: center;
@@ -223,6 +228,7 @@ html {
 
 #skills-summary {
     grid-area: summary;
+    padding: 0 6em 2em 6em;
 }
 
 #programming-languages {
