@@ -191,7 +191,10 @@ p {
 }
 
 #about-text {
+    background-color: #fefefe;
+    border: solid 1px #eee;
     grid-area: text;
+    padding: 2em;
 }
 
 #about-text h3 {
@@ -228,7 +231,10 @@ p {
 
 #skills-summary {
     grid-area: summary;
-    padding: 0 6em 2em 6em;
+    margin: 0 4em;
+    padding: 2em 4em;
+    border: solid 1px #ddd;
+    background-color: #eaeaea;
 }
 
 #programming-languages {
@@ -245,6 +251,13 @@ p {
 
 #things-to-learn {
     grid-area: learning;
+}
+
+/* Experience Section */
+#project-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
 }
 
 /* Footer */
