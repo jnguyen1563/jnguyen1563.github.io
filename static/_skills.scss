@@ -2,8 +2,8 @@
 #skills-main {
     align-content: center;
     display: grid;
-    grid-row-gap: 4em;
     grid-column-gap: 4em;
+    grid-row-gap: 4em;
     grid-template-areas: 'summary summary summary summary'
     'languages technologies algorithms learning';
     justify-content: center;
@@ -12,8 +12,8 @@
 }
 
 .bullet-list {
-    display: flex;
     align-items: center;
+    display: flex;
     flex-direction: column;
 }
 
@@ -25,11 +25,11 @@
 }
 
 #skills-summary {
+    background-color: #eaeaea;
+    border: solid 1px #ddd;
     grid-area: summary;
     margin: 0 4em;
     padding: 2em 4em;
-    border: solid 1px #ddd;
-    background-color: #eaeaea;
 }
 
 #programming-languages {

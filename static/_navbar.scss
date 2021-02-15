@@ -12,20 +12,22 @@
     display: flex;
     justify-content: space-around;
     overflow: hidden;
-    position: fixed;
     padding-top: 50px;
+    position: fixed;
     transition: padding 0.15s ease-out;
     width: 100vw;
 }
 
-.navbar__brand a {
-    color: #000000aa;
-    font-family: 'Roboto', Helvetica, sans-serif;
-    font-size: 2em;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    visibility: var(--brand-visibility);
+.navbar__brand {
+    a {
+        color: #000000aa;
+        font-family: 'Roboto', Helvetica, sans-serif;
+        font-size: 2em;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        visibility: var(--brand-visibility);
+    }
 }
 
 .navbar__nav {
@@ -35,9 +37,9 @@
     a {
         border-bottom: solid transparent;
         color: var(--text-color-idle);
-        text-align: center;
         margin: 14px 16px;
         padding: 2px 4px;
+        text-align: center;
         text-decoration: none;
         transition: border-bottom 0.25s;
 
