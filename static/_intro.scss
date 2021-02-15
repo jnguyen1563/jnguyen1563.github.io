@@ -1,0 +1,58 @@
+/* Intro */
+
+.intro {
+    align-items: center;
+    background-color: #222222;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+.intro-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        color: white;
+        margin: 0;
+        padding: 0;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 4em;
+    }
+
+    .heading-sep {
+        background-color: lightseagreen;
+        height: 4px;
+        margin: 20px;
+        width: 300px;
+    }
+
+    h2 {
+        color: white;
+        font-size: 1.5em;
+        text-align: center;
+
+        span {
+            color: lightseagreen;
+            font-size: 1em;
+            margin: 0em 0.25em;
+        }
+    }
+
+    .about-btn {
+        background-color: lightseagreen;
+        border-radius: 10px;
+        color: white;
+        font-size: 1.25em;
+        margin: 20px 0px;
+        padding: 6px 10px;
+        text-decoration: none;
+
+        &:hover {
+            background-color: rgb(26, 148, 142);
+        }
+    }
+}

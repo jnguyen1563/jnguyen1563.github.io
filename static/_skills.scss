@@ -1,0 +1,49 @@
+/* Skills Section */
+#skills-main {
+    align-content: center;
+    display: grid;
+    grid-row-gap: 4em;
+    grid-column-gap: 4em;
+    grid-template-areas: 'summary summary summary summary'
+    'languages technologies algorithms learning';
+    justify-content: center;
+    overflow: hidden;
+    padding: 1em;
+}
+
+.bullet-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list-sep {
+    background-color: lightseagreen;
+    height: 1px;
+    margin: 0.5em 0;
+    width: 10em;
+}
+
+#skills-summary {
+    grid-area: summary;
+    margin: 0 4em;
+    padding: 2em 4em;
+    border: solid 1px #ddd;
+    background-color: #eaeaea;
+}
+
+#programming-languages {
+    grid-area: languages;
+}
+
+#technologies {
+    grid-area: technologies;
+}
+
+#ml-algorithms {
+    grid-area: algorithms;
+}
+
+#things-to-learn {
+    grid-area: learning;
+}

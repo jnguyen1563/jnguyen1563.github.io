@@ -1,20 +1,4 @@
-/* General Styling */
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: Helvetica, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-p {
-  line-height: 1.4;
-}
-
+/* SCSS partials */
 /* Navbar */
 .navbar {
   /* Custom attributes to be inverted */
@@ -157,54 +141,6 @@ p {
   background-color: #1a948e;
 }
 
-/* Content Sections */
-.content {
-  width: 100vw;
-  padding: 3em;
-}
-
-.content__header {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 20px;
-}
-
-.content__header h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 3em;
-}
-
-.content__header .title-sep {
-  background-color: lightseagreen;
-  height: 2px;
-  margin: 0.5em 0 2em 0;
-  width: 10em;
-}
-
-.content__container {
-  margin: 0 auto;
-  max-width: 70%;
-}
-
-.section-even {
-  background-color: #fff;
-}
-
-.section-odd {
-  background-color: #eee;
-}
-
 /* About */
 #about-main {
   display: -ms-grid;
@@ -320,6 +256,71 @@ p {
           justify-content: center;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+}
+
+/* General Styling */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* Content Sections */
+.content {
+  width: 100vw;
+  padding: 3em;
+}
+
+.content__header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
+}
+
+.content__header h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3em;
+}
+
+.content__header .title-sep {
+  background-color: lightseagreen;
+  height: 2px;
+  margin: 0.5em 0 2em 0;
+  width: 10em;
+}
+
+.content__container {
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.section-even {
+  background-color: #fff;
+}
+
+.section-odd {
+  background-color: #eee;
 }
 
 /* Footer */
