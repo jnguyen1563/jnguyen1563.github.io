@@ -1,0 +1,268 @@
+/* General Styling */
+
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    line-height: 1.4;
+}
+
+/* Navbar */
+
+.navbar {
+    /* Custom attributes to be inverted */
+    --background: transparent;
+    --brand-visibility: hidden;
+    --text-color-idle: #ffffffaa;
+    --text-color-solid: #ffffff;
+
+    align-items: center;
+    background-color: var(--background);
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    position: fixed;
+    padding-top: 50px;
+    transition: padding 0.15s ease-out;
+    width: 100vw;
+}
+
+.navbar__brand a {
+    color: #000000aa;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    visibility: var(--brand-visibility);
+}
+
+.navbar__nav {
+    display: flex;
+    justify-content: center;
+
+    a {
+        border-bottom: solid transparent;
+        color: var(--text-color-idle);
+        text-align: center;
+        margin: 14px 16px;
+        padding: 2px 4px;
+        text-decoration: none;
+        transition: border-bottom 0.25s;
+
+        &:hover {
+            border-bottom: solid lightseagreen;
+            color: var(--text-color-solid);
+        }
+    }
+}
+
+.navbar-invert {
+    --background: #ffffff;
+    --brand-visibility: visible;
+    --text-color-idle: #000000aa;
+    --text-color-solid: #000000ff;
+    box-shadow: 0px 1px 2px;
+    padding: 0px 0px;
+}
+
+/* Intro */
+
+.intro {
+    align-items: center;
+    background-color: #222222;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+.intro-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        color: white;
+        margin: 0;
+        padding: 0;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 4em;
+    }
+
+    .heading-sep {
+        background-color: lightseagreen;
+        height: 4px;
+        margin: 20px;
+        width: 300px;
+    }
+
+    h2 {
+        color: white;
+        font-size: 1.5em;
+        text-align: center;
+
+        span {
+            color: lightseagreen;
+            font-size: 1em;
+            margin: 0em 0.25em;
+        }
+    }
+
+    .about-btn {
+        background-color: lightseagreen;
+        border-radius: 10px;
+        color: white;
+        font-size: 1.25em;
+        margin: 20px 0px;
+        padding: 6px 10px;
+        text-decoration: none;
+
+        &:hover {
+            background-color: rgb(26, 148, 142);
+        }
+    }
+}
+
+/* Content Sections */
+.content {
+    width: 100vw;
+    padding: 3em; 
+}
+
+.content__header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+
+    h2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 3em;
+    }
+
+    .title-sep {
+        background-color: lightseagreen;
+        height: 2px;
+        margin: 0.5em 0 2em 0;
+        width: 10em;
+    }
+}
+
+.content__container {
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.section-even {
+    background-color: #fff;
+}
+
+.section-odd {
+    background-color: #eee;
+}
+
+/* About */
+#about-main {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-areas: 'portrait text';
+    overflow: hidden;
+}
+
+#portrait {
+    grid-area: portrait;
+
+    img {
+        height: 400px;
+        max-width: 100%;
+    }
+}
+
+
+#about-text {
+    background-color: #fefefe;
+    border: solid 1px #eee;
+    grid-area: text;
+    padding: 2em;
+
+    h3 {
+        font-family: Helvetica, Arial, sans-serif;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+}
+
+/* Skills Section */
+#skills-main {
+    align-content: center;
+    display: grid;
+    grid-row-gap: 4em;
+    grid-column-gap: 4em;
+    grid-template-areas: 'summary summary summary summary'
+    'languages technologies algorithms learning';
+    justify-content: center;
+    overflow: hidden;
+    padding: 1em;
+}
+
+.bullet-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list-sep {
+    background-color: lightseagreen;
+    height: 1px;
+    margin: 0.5em 0;
+    width: 10em;
+}
+
+#skills-summary {
+    grid-area: summary;
+    margin: 0 4em;
+    padding: 2em 4em;
+    border: solid 1px #ddd;
+    background-color: #eaeaea;
+}
+
+#programming-languages {
+    grid-area: languages;
+}
+
+#technologies {
+    grid-area: technologies;
+}
+
+#ml-algorithms {
+    grid-area: algorithms;
+}
+
+#things-to-learn {
+    grid-area: learning;
+}
+
+/* Experience Section */
+#project-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Footer */
+.footer {
+    background-color: #222222;
+    width: 100vw;
+    height: 10vh;
+}

@@ -1,0 +1,331 @@
+/* General Styling */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  line-height: 1.4;
+}
+
+/* Navbar */
+.navbar {
+  /* Custom attributes to be inverted */
+  --background: transparent;
+  --brand-visibility: hidden;
+  --text-color-idle: #ffffffaa;
+  --text-color-solid: #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--background);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow: hidden;
+  position: fixed;
+  padding-top: 50px;
+  -webkit-transition: padding 0.15s ease-out;
+  transition: padding 0.15s ease-out;
+  width: 100vw;
+}
+
+.navbar__brand a {
+  color: #000000aa;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  visibility: var(--brand-visibility);
+}
+
+.navbar__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar__nav a {
+  border-bottom: solid transparent;
+  color: var(--text-color-idle);
+  text-align: center;
+  margin: 14px 16px;
+  padding: 2px 4px;
+  text-decoration: none;
+  -webkit-transition: border-bottom 0.25s;
+  transition: border-bottom 0.25s;
+}
+
+.navbar__nav a:hover {
+  border-bottom: solid lightseagreen;
+  color: var(--text-color-solid);
+}
+
+.navbar-invert {
+  --background: #ffffff;
+  --brand-visibility: visible;
+  --text-color-idle: #000000aa;
+  --text-color-solid: #000000ff;
+  -webkit-box-shadow: 0px 1px 2px;
+          box-shadow: 0px 1px 2px;
+  padding: 0px 0px;
+}
+
+/* Intro */
+.intro {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #222222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+}
+
+.intro-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.intro-wrapper h1 {
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 4em;
+}
+
+.intro-wrapper .heading-sep {
+  background-color: lightseagreen;
+  height: 4px;
+  margin: 20px;
+  width: 300px;
+}
+
+.intro-wrapper h2 {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.intro-wrapper h2 span {
+  color: lightseagreen;
+  font-size: 1em;
+  margin: 0em 0.25em;
+}
+
+.intro-wrapper .about-btn {
+  background-color: lightseagreen;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.25em;
+  margin: 20px 0px;
+  padding: 6px 10px;
+  text-decoration: none;
+}
+
+.intro-wrapper .about-btn:hover {
+  background-color: #1a948e;
+}
+
+/* Content Sections */
+.content {
+  width: 100vw;
+  padding: 3em;
+}
+
+.content__header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
+}
+
+.content__header h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3em;
+}
+
+.content__header .title-sep {
+  background-color: lightseagreen;
+  height: 2px;
+  margin: 0.5em 0 2em 0;
+  width: 10em;
+}
+
+.content__container {
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.section-even {
+  background-color: #fff;
+}
+
+.section-odd {
+  background-color: #eee;
+}
+
+/* About */
+#about-main {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2em;
+      grid-template-areas: 'portrait text';
+  overflow: hidden;
+}
+
+#portrait {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: portrait;
+}
+
+#portrait img {
+  height: 400px;
+  max-width: 100%;
+}
+
+#about-text {
+  background-color: #fefefe;
+  border: solid 1px #eee;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: text;
+  padding: 2em;
+}
+
+#about-text h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+/* Skills Section */
+#skills-main {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 4em;
+  grid-column-gap: 4em;
+      grid-template-areas: 'summary summary summary summary' 'languages technologies algorithms learning';
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  padding: 1em;
+}
+
+.bullet-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.list-sep {
+  background-color: lightseagreen;
+  height: 1px;
+  margin: 0.5em 0;
+  width: 10em;
+}
+
+#skills-summary {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: summary;
+  margin: 0 4em;
+  padding: 2em 4em;
+  border: solid 1px #ddd;
+  background-color: #eaeaea;
+}
+
+#programming-languages {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: languages;
+}
+
+#technologies {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: technologies;
+}
+
+#ml-algorithms {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: algorithms;
+}
+
+#things-to-learn {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: learning;
+}
+
+/* Experience Section */
+#project-container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+/* Footer */
+.footer {
+  background-color: #222222;
+  width: 100vw;
+  height: 10vh;
+}
+/*# sourceMappingURL=style.css.map */
