@@ -2,19 +2,37 @@
 #skills-main {
     align-content: center;
     display: grid;
-    grid-column-gap: 4em;
+    grid-column-gap: 1em;
     grid-row-gap: 4em;
     grid-template-areas: 'summary summary summary summary'
-    'languages technologies algorithms learning';
+                         'languages technologies algorithms learning';
     justify-content: center;
     overflow: hidden;
     padding: 1em;
+
+    @media only screen and (max-width: 1200px) {
+        grid-template-areas: 'summary summary'
+                             'languages technologies'
+                             'algorithms learning';
+    }
+
+    @media only screen and (max-width: 900px) {
+        grid-template-areas: 'summary'
+                             'languages'
+                             'technologies'
+                             'algorithms'
+                             'learning';
+    }
 }
 
 .bullet-list {
     align-items: center;
     display: flex;
     flex-direction: column;
+
+    h3 {
+        font-family: "Roboto", Helvetica, sans-serif;
+    }
 }
 
 .list-sep {
@@ -27,6 +45,7 @@
 #skills-summary {
     background-color: #eaeaea;
     border: solid 1px #ddd;
+    border-radius: 10px;
     grid-area: summary;
     margin: 0 4em;
     padding: 2em 4em;

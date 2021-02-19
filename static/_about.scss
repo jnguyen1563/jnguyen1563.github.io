@@ -4,21 +4,28 @@
     grid-gap: 2em;
     grid-template-areas: 'portrait text';
     overflow: hidden;
+
+    // Collapse text and portrait when screen shrinks
+    @media only screen and (max-width: 900px) {
+        grid-template-areas: 'portrait'
+                             'text';
+    }
 }
 
 #portrait {
     grid-area: portrait;
 
     img {
+        border-radius: 10px;
         height: 400px;
         max-width: 100%;
     }
 }
 
-
 #about-text {
     background-color: #fefefe;
-    border: solid 1px #eee;
+    border: ridge 1px #eee;
+    border-radius: 10px;
     grid-area: text;
     padding: 2em;
 

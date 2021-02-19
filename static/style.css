@@ -63,8 +63,8 @@
   --brand-visibility: visible;
   --text-color-idle: #000000aa;
   --text-color-solid: #000000ff;
-  -webkit-box-shadow: 0px 1px 2px;
-          box-shadow: 0px 1px 2px;
+  -webkit-box-shadow: 0px 1px 4px;
+          box-shadow: 0px 1px 4px;
   padding: 0px 0px;
 }
 
@@ -150,6 +150,12 @@
   overflow: hidden;
 }
 
+@media only screen and (max-width: 900px) {
+  #about-main {
+        grid-template-areas: 'portrait' 'text';
+  }
+}
+
 #portrait {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -157,13 +163,15 @@
 }
 
 #portrait img {
+  border-radius: 10px;
   height: 400px;
   max-width: 100%;
 }
 
 #about-text {
   background-color: #fefefe;
-  border: solid 1px #eee;
+  border: ridge 1px #eee;
+  border-radius: 10px;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: text;
@@ -182,7 +190,7 @@
       align-content: center;
   display: -ms-grid;
   display: grid;
-  grid-column-gap: 4em;
+  grid-column-gap: 1em;
   grid-row-gap: 4em;
       grid-template-areas: 'summary summary summary summary' 'languages technologies algorithms learning';
   -webkit-box-pack: center;
@@ -190,6 +198,18 @@
           justify-content: center;
   overflow: hidden;
   padding: 1em;
+}
+
+@media only screen and (max-width: 1200px) {
+  #skills-main {
+        grid-template-areas: 'summary summary' 'languages technologies' 'algorithms learning';
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #skills-main {
+        grid-template-areas: 'summary' 'languages' 'technologies' 'algorithms' 'learning';
+  }
 }
 
 .bullet-list {
@@ -205,6 +225,10 @@
           flex-direction: column;
 }
 
+.bullet-list h3 {
+  font-family: "Roboto", Helvetica, sans-serif;
+}
+
 .list-sep {
   background-color: lightseagreen;
   height: 1px;
@@ -215,6 +239,7 @@
 #skills-summary {
   background-color: #eaeaea;
   border: solid 1px #ddd;
+  border-radius: 10px;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
@@ -248,14 +273,26 @@
 }
 
 /* Experience Section */
-#project-container {
+.responsive-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  gap: 1em;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+}
+
+.project-block {
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+.project-block a {
+  text-align: center;
+  text-decoration: none;
+}
+
+.project-block a h3, .project-block a p {
+  color: black;
 }
 
 /* General Styling */
@@ -315,6 +352,7 @@ p {
   max-width: 70%;
 }
 
+/* Alternate background colors for content sections */
 .section-even {
   background-color: #fff;
 }

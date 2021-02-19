@@ -1,6 +1,18 @@
 /* Experience Section */
-#project-container {
+.responsive-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
+    gap: 1em;
+    grid-template-columns: auto auto auto;
+}
+
+.project-block {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    a {
+        text-align: center;
+        text-decoration: none;
+        h3, p {
+            color: black;
+        }
+    }
 }
