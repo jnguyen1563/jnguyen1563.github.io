@@ -1,5 +1,7 @@
 /* SCSS partials */
 /* Navbar */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 .navbar {
   /* Custom attributes to be inverted */
   --background: transparent;
@@ -21,6 +23,7 @@
   -webkit-transition: padding 0.15s ease-out;
   transition: padding 0.15s ease-out;
   width: 100vw;
+  z-index: 100;
 }
 
 .navbar__brand a {
@@ -45,6 +48,7 @@
 .navbar__nav a {
   border-bottom: solid transparent;
   color: var(--text-color-idle);
+  font-family: Helvetica, sans-serif;
   margin: 14px 16px;
   padding: 2px 4px;
   text-align: center;
@@ -74,6 +78,9 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: #222222;
+  background-image: url("./images/python-code.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,6 +95,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,6 +106,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 100vh;
+  width: 100vw;
 }
 
 .intro-wrapper h1 {
@@ -131,6 +141,7 @@
   background-color: lightseagreen;
   border-radius: 10px;
   color: white;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.25em;
   margin: 20px 0px;
   padding: 6px 10px;
@@ -179,7 +190,6 @@
 }
 
 #about-text h3 {
-  font-family: Helvetica, Arial, sans-serif;
   margin-bottom: 1em;
   text-align: center;
 }
@@ -206,7 +216,7 @@
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   #skills-main {
         grid-template-areas: 'summary' 'languages' 'technologies' 'algorithms' 'learning';
   }
@@ -227,6 +237,12 @@
 
 .bullet-list h3 {
   font-family: "Roboto", Helvetica, sans-serif;
+}
+
+.bullet-list i {
+  color: lightseagreen;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
 }
 
 .list-sep {
@@ -281,25 +297,43 @@
       grid-template-columns: auto auto auto;
 }
 
-.project-block {
-  border: 1px solid #eee;
-  border-radius: 10px;
+@media only screen and (max-width: 1200px) {
+  .responsive-grid {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
 }
 
-.project-block a {
+@media only screen and (max-width: 800px) {
+  .responsive-grid {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+
+.responsive-grid a {
+  border: 1px solid #eee;
+  border-radius: 2em;
+  color: black;
+  padding: 1em;
   text-align: center;
   text-decoration: none;
 }
 
-.project-block a h3, .project-block a p {
-  color: black;
+.responsive-grid a:hover {
+  background-color: #eee;
 }
 
+.project-content {
+  font-family: "Roboto", Helvetica, sans-serif;
+}
+
+/* Fonts */
 /* General Styling */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -308,8 +342,14 @@ html {
   scroll-behavior: smooth;
 }
 
-p {
+/* Typography */
+p, li {
+  font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
 }
 
 /* Content Sections */

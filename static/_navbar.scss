@@ -16,6 +16,7 @@
     position: fixed;
     transition: padding 0.15s ease-out;
     width: 100vw;
+    z-index: 100;
 }
 
 .navbar__brand {
@@ -37,6 +38,7 @@
     a {
         border-bottom: solid transparent;
         color: var(--text-color-idle);
+        font-family: Helvetica, sans-serif;
         margin: 14px 16px;
         padding: 2px 4px;
         text-align: center;

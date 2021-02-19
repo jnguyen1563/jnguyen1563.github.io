@@ -3,16 +3,29 @@
     display: grid;
     gap: 1em;
     grid-template-columns: auto auto auto;
-}
 
-.project-block {
-    border: 1px solid #eee;
-    border-radius: 10px;
+    @media only screen and (max-width: 1200px) {
+        grid-template-columns: auto auto;
+    }
+
+    @media only screen and (max-width: 800px) {
+        grid-template-columns: auto;
+    }
+
     a {
+        border: 1px solid #eee;
+        border-radius: 2em;
+        color: black;
+        padding: 1em;
         text-align: center;
         text-decoration: none;
-        h3, p {
-            color: black;
+
+        &:hover {
+            background-color: #eee;
         }
     }
+}
+
+.project-content {
+    font-family: "Roboto", Helvetica, sans-serif;
 }
