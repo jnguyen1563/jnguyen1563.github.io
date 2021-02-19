@@ -1,2 +1,5 @@
 #### Sass Generated Files ####
 *.css.map
+
+#### Personal Notes ####
+*.txt
