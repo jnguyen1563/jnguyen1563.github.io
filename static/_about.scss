@@ -3,6 +3,7 @@
     display: grid;
     grid-gap: 2em;
     grid-template-areas: 'portrait text';
+    margin: 0 auto;
     overflow: hidden;
 
     // Collapse text and portrait when screen shrinks
@@ -27,7 +28,7 @@
     border: ridge 1px #eee;
     border-radius: 10px;
     grid-area: text;
-    padding: 2em;
+    // padding: 2em;
 
     h3 {
         margin-bottom: 1em;

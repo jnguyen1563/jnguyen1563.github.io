@@ -1,14 +1,12 @@
 /* Skills Section */
 #skills-main {
-    align-content: center;
     display: grid;
     grid-column-gap: 1em;
     grid-row-gap: 4em;
     grid-template-areas: 'summary summary summary summary'
                          'languages technologies algorithms learning';
-    justify-content: center;
+    margin: 0 auto;
     overflow: hidden;
-    padding: 1em;
 
     @media only screen and (max-width: 1200px) {
         grid-template-areas: 'summary summary'
@@ -53,8 +51,6 @@
     border: solid 1px #ddd;
     border-radius: 10px;
     grid-area: summary;
-    margin: 0 4em;
-    padding: 2em 4em;
 }
 
 #programming-languages {

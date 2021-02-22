@@ -74,20 +74,14 @@
 
 /* Intro */
 .intro {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: #222222;
   background-image: url("./images/python-code.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 0 auto;
   width: 100vw;
 }
 
@@ -106,23 +100,25 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 auto;
   height: 100vh;
   width: 100vw;
 }
 
 .intro-wrapper h1 {
   color: white;
-  margin: 0;
-  padding: 0;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 4em;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .intro-wrapper .heading-sep {
   background-color: lightseagreen;
   height: 4px;
-  margin: 20px;
-  width: 300px;
+  margin: 1.5em;
+  width: 15em;
 }
 
 .intro-wrapper h2 {
@@ -143,8 +139,8 @@
   color: white;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.25em;
-  margin: 20px 0px;
-  padding: 6px 10px;
+  margin: 1em 0;
+  padding: 0.25em 0.5em;
   text-decoration: none;
 }
 
@@ -158,6 +154,7 @@
   display: grid;
   grid-gap: 2em;
       grid-template-areas: 'portrait text';
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -186,7 +183,6 @@
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: text;
-  padding: 2em;
 }
 
 #about-text h3 {
@@ -196,18 +192,13 @@
 
 /* Skills Section */
 #skills-main {
-  -ms-flex-line-pack: center;
-      align-content: center;
   display: -ms-grid;
   display: grid;
   grid-column-gap: 1em;
   grid-row-gap: 4em;
       grid-template-areas: 'summary summary summary summary' 'languages technologies algorithms learning';
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 0 auto;
   overflow: hidden;
-  padding: 1em;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -260,8 +251,6 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: summary;
-  margin: 0 4em;
-  padding: 2em 4em;
 }
 
 #programming-languages {
@@ -378,8 +367,9 @@ h1, h2, h3, h4 {
 
 /* Content Sections */
 .content {
-  width: 100vw;
-  padding: 3em;
+  margin: 0 auto;
+  padding: 4em 0;
+  position: relative;
 }
 
 .content__header {
@@ -396,7 +386,6 @@ h1, h2, h3, h4 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 20px;
 }
 
 .content__header h2 {
@@ -414,6 +403,7 @@ h1, h2, h3, h4 {
 .content__container {
   margin: 0 auto;
   max-width: 70%;
+  position: relative;
 }
 
 /* Alternate background colors for content sections */

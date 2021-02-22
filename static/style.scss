@@ -34,8 +34,9 @@ h1, h2, h3, h4 {
 
 /* Content Sections */
 .content {
-    width: 100vw;
-    padding: 3em; 
+    margin: 0 auto;
+    padding: 4em 0;
+    position: relative;
 }
 
 .content__header {
@@ -43,7 +44,6 @@ h1, h2, h3, h4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 20px;
 
     h2 {
         font-family: 'Roboto', sans-serif;
@@ -61,6 +61,7 @@ h1, h2, h3, h4 {
 .content__container {
     margin: 0 auto;
     max-width: 70%;
+    position: relative;
 }
 
 /* Alternate background colors for content sections */ 
