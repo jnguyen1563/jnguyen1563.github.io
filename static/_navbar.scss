@@ -52,11 +52,44 @@
     }
 }
 
+.navbar__bars {
+    display: none;
+    position: absolute;
+
+    button {
+        background-color: transparent;
+        border: none;
+        color: var(--text-color-idle);
+        cursor: pointer;
+        font-size: 2em;
+
+        &:hover {
+            color: lightseagreen;
+        }
+    }
+}
+
+// Responsive topnav
+@media only screen and (max-width: 760px) {
+    .navbar__nav {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar__bars {
+        display: flex;
+    }
+}
+
+.nav-active {
+    display: flex;
+}
+
 .navbar-invert {
     --background: #ffffff;
     --brand-visibility: visible;
     --text-color-idle: #000000aa;
     --text-color-solid: #000000ff;
     box-shadow: 0px 1px 4px;
-    padding: 0px 0px;
+    padding: 4px 0px;
 }

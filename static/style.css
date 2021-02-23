@@ -62,6 +62,44 @@
   color: var(--text-color-solid);
 }
 
+.navbar__bars {
+  display: none;
+  position: absolute;
+}
+
+.navbar__bars button {
+  background-color: transparent;
+  border: none;
+  color: var(--text-color-idle);
+  cursor: pointer;
+  font-size: 2em;
+}
+
+.navbar__bars button:hover {
+  color: lightseagreen;
+}
+
+@media only screen and (max-width: 760px) {
+  .navbar__nav {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar__bars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.nav-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .navbar-invert {
   --background: #ffffff;
   --brand-visibility: visible;
@@ -69,7 +107,7 @@
   --text-color-solid: #000000ff;
   -webkit-box-shadow: 0px 1px 4px;
           box-shadow: 0px 1px 4px;
-  padding: 0px 0px;
+  padding: 4px 0px;
 }
 
 /* Intro */
@@ -77,6 +115,7 @@
   background-color: #222222;
   background-image: url("./images/python-code.jpg");
   background-size: cover;
+  background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,11 +193,12 @@
   display: grid;
   grid-gap: 2em;
       grid-template-areas: 'portrait text';
+  justify-items: center;
   margin: 0 auto;
   overflow: hidden;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   #about-main {
         grid-template-areas: 'portrait' 'text';
   }
@@ -183,6 +223,7 @@
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: text;
+  padding: 30px;
 }
 
 #about-text h3 {
@@ -207,7 +248,7 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 760px) {
   #skills-main {
         grid-template-areas: 'summary' 'languages' 'technologies' 'algorithms' 'learning';
   }
@@ -251,6 +292,7 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: summary;
+  padding: 30px;
 }
 
 #programming-languages {
@@ -293,7 +335,7 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 760px) {
   .responsive-grid {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
@@ -402,7 +444,8 @@ h1, h2, h3, h4 {
 
 .content__container {
   margin: 0 auto;
-  max-width: 70%;
+  width: 1280px;
+  max-width: 95%;
   position: relative;
 }
 

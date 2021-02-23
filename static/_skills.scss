@@ -14,7 +14,7 @@
                              'algorithms learning';
     }
 
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 760px) {
         grid-template-areas: 'summary'
                              'languages'
                              'technologies'
@@ -51,6 +51,7 @@
     border: solid 1px #ddd;
     border-radius: 10px;
     grid-area: summary;
+    padding: 30px;
 }
 
 #programming-languages {
