@@ -1,6 +1,7 @@
 /* Skills Section */
 #skills-main {
     display: grid;
+    justify-content: center;
     grid-column-gap: 1em;
     grid-row-gap: 4em;
     grid-template-areas: 'summary summary summary summary'

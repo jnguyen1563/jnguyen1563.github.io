@@ -10,9 +10,9 @@ const sectionOneOptions = {
 const sectionOneObserver = new IntersectionObserver(function(entries, sectionOneObserver) {
     entries.forEach(entry => {
         if(!entry.isIntersecting) {
-            navbar.classList.add("navbar-invert");
+            navbar.classList.add('navbar-invert');
         } else {
-            navbar.classList.remove("navbar-invert");
+            navbar.classList.remove('navbar-invert');
         }
     })
 }, sectionOneOptions);
@@ -25,4 +25,5 @@ const navLinks = document.getElementById('navbar-navigation')
 
 hamburgerButton.addEventListener('click', () => {
     navLinks.classList.toggle('nav-active');
+    navbar.classList.toggle('navbar-invert-responsive');
 })

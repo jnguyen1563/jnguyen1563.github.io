@@ -20,8 +20,8 @@
   overflow: hidden;
   padding-top: 50px;
   position: fixed;
-  -webkit-transition: padding 0.15s ease-out;
-  transition: padding 0.15s ease-out;
+  -webkit-transition: padding 0.2s ease-out, background-color 0.3s ease-out;
+  transition: padding 0.2s ease-out, background-color 0.3s ease-out;
   width: 100vw;
   z-index: 100;
 }
@@ -48,6 +48,7 @@
 .navbar__nav a {
   border-bottom: solid transparent;
   color: var(--text-color-idle);
+  display: block;
   font-family: Helvetica, sans-serif;
   margin: 14px 16px;
   padding: 2px 4px;
@@ -65,6 +66,8 @@
 .navbar__bars {
   display: none;
   position: absolute;
+  right: 8px;
+  top: 6px;
 }
 
 .navbar__bars button {
@@ -80,12 +83,22 @@
 }
 
 @media only screen and (max-width: 760px) {
+  .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .navbar__nav {
     display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .navbar__nav a {
+    padding: 4px 0;
+    margin: 4px 0;
   }
   .navbar__bars {
     display: -webkit-box;
@@ -101,7 +114,17 @@
 }
 
 .navbar-invert {
-  --background: #ffffff;
+  --background: #fff;
+  --brand-visibility: visible;
+  --text-color-idle: #000000aa;
+  --text-color-solid: #000000ff;
+  -webkit-box-shadow: 0px 1px 4px;
+          box-shadow: 0px 1px 4px;
+  padding: 4px 0px;
+}
+
+.navbar-invert-responsive {
+  --background: #fff;
   --brand-visibility: visible;
   --text-color-idle: #000000aa;
   --text-color-solid: #000000ff;
@@ -181,10 +204,12 @@
   margin: 1em 0;
   padding: 0.25em 0.5em;
   text-decoration: none;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
 }
 
 .intro-wrapper .about-btn:hover {
-  background-color: #1a948e;
+  background-color: #21d6cd;
 }
 
 /* About */
@@ -235,6 +260,9 @@
 #skills-main {
   display: -ms-grid;
   display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   grid-column-gap: 1em;
   grid-row-gap: 4em;
       grid-template-areas: 'summary summary summary summary' 'languages technologies algorithms learning';
