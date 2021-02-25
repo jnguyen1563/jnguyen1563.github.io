@@ -176,7 +176,7 @@
                                 <h3>Sherlock Holmes Char RNN</h3>
                                 <div class="underline"></div>
                                 <img src="" alt="">
-                                <p>Character RNN experiment with various RNN architectures and optimizers</p>
+                                <p>Character recurrent neural network experiment with various RNN architectures and optimizers</p>
                             </div>
                         </div>
                     </a>
@@ -235,9 +235,31 @@
         </section>
         <!-- Contact Me-->
         <section class="content section-odd" id="contact"> 
-            <div class="contact-wrapper">
-                <h2 class="content__header">Contact Me</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="contact-wrapper" id="contact-form">
+                <div class="content__header">
+                    <h2>Contact Me</h2>
+                    <div class="title-sep"></div>
+                </div>
+                <div class="content__container">
+                    <form action="/contact_page.php" class="contact-form">
+                        <!-- Name and Email -->
+                        <div class="identifiers">
+                            <div class="identifier-field"> <!-- Name Entry -->
+                                <label for="name">Name</label>
+                                <input type="text" id="name" class="input-field" name="name" placeholder="Your Name">
+                            </div>
+                            <div class="identifier-field"> <!-- Email Entry -->
+                                <label for="email">E-mail</label>
+                                <input type="text" id="email" class="input-field" name="email" placeholder="Your E-mail address">
+                            </div>
+                        </div>
+                        <!-- Message Entry -->
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" class="input-field" cols="30" rows="10" placeholder="Your message"></textarea>
+                        <!-- Submit button -->
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
             </div>
         </section>
     </main>

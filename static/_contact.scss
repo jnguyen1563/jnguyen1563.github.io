@@ -1,0 +1,27 @@
+/* Contact Form Section */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.input-field {
+    border-radius: 10px;
+    border-style: hidden;
+    font-size: 2em;
+    resize: none;
+}
+
+.identifiers {
+    display: flex;
+    justify-content: space-around;
+    
+    .identifier-field {
+        background-color: #fff;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        width: 40%;
+    }
+}

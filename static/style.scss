@@ -4,6 +4,7 @@
 @import "about";
 @import "skills";
 @import "experience";
+@import "contact";
 
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
@@ -35,7 +36,7 @@ h1, h2, h3, h4 {
 /* Content Sections */
 .content {
     margin: 0 auto;
-    padding: 4em 0;
+    padding: 5em 0;
     position: relative;
 }
 

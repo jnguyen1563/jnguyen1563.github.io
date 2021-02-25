@@ -411,6 +411,46 @@
   margin: 0 auto 0.5em auto;
 }
 
+/* Contact Form Section */
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.input-field {
+  border-radius: 10px;
+  border-style: hidden;
+  font-size: 2em;
+  resize: none;
+}
+
+.identifiers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.identifiers .identifier-field {
+  background-color: #fff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+}
+
 /* Fonts */
 /* General Styling */
 * {
@@ -438,7 +478,7 @@ h1, h2, h3, h4 {
 /* Content Sections */
 .content {
   margin: 0 auto;
-  padding: 4em 0;
+  padding: 5em 0;
   position: relative;
 }
 
