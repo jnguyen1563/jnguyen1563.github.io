@@ -1,27 +1,72 @@
 /* Contact Form Section */
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 1000px;
+#contact {
+    height: 90vh;
+    width: 100vw;
+}
+
+#contact-content {
+    p {
+        font-size: 1.5em;
+        margin: 0 auto;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
 }
 
 .input-field {
+    background-color: #fff;
     border-radius: 10px;
     border-style: hidden;
-    font-size: 2em;
-    resize: none;
+    display: flex;
+    font-size: 1.5em;
+    margin: 10px;
+    padding: 10px;
+
+    .entry-box {
+        border-style: none;
+        resize: none;
+        width: 100%;
+
+        &::placeholder {
+            color: lightseagreen;
+            opacity: 100;
+        }
+    }
 }
 
 .identifiers {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     
     .identifier-field {
-        background-color: #fff;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        width: 40%;
+        width: 48%;
+    }
+}
+
+.message-field {
+    textarea {
+        height: 15em;
+    }
+}
+
+.submit-button {
+    font-size: 1.5em;
+    border-style: none;
+    background-color: rgba(100, 100, 100, 0.5);
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+    padding: 4px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3 ease-out;
+
+    &:hover {
+        background-color: rgba(0, 170, 170, 1);
     }
 }

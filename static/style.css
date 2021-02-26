@@ -412,7 +412,19 @@
 }
 
 /* Contact Form Section */
-.contact-form {
+#contact {
+  height: 90vh;
+  width: 100vw;
+}
+
+#contact-content p {
+  font-size: 1.5em;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+#contact-content .contact-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -421,34 +433,78 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 auto;
-  width: 1000px;
 }
 
 .input-field {
+  background-color: #fff;
   border-radius: 10px;
   border-style: hidden;
-  font-size: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.5em;
+  margin: 10px;
+  padding: 10px;
+}
+
+.input-field .entry-box {
+  border-style: none;
   resize: none;
+  width: 100%;
+}
+
+.input-field .entry-box::-webkit-input-placeholder {
+  color: lightseagreen;
+  opacity: 100;
+}
+
+.input-field .entry-box:-ms-input-placeholder {
+  color: lightseagreen;
+  opacity: 100;
+}
+
+.input-field .entry-box::-ms-input-placeholder {
+  color: lightseagreen;
+  opacity: 100;
+}
+
+.input-field .entry-box::placeholder {
+  color: lightseagreen;
+  opacity: 100;
 }
 
 .identifiers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .identifiers .identifier-field {
-  background-color: #fff;
-  border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 40%;
+  width: 48%;
+}
+
+.message-field textarea {
+  height: 15em;
+}
+
+.submit-button {
+  font-size: 1.5em;
+  border-style: none;
+  background-color: rgba(100, 100, 100, 0.5);
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  padding: 4px 10px;
+  border-radius: 4px;
+  -webkit-transition: background-color 0.3 ease-out;
+  transition: background-color 0.3 ease-out;
+}
+
+.submit-button:hover {
+  background-color: #00aaaa;
 }
 
 /* Fonts */

@@ -235,29 +235,33 @@
         </section>
         <!-- Contact Me-->
         <section class="content section-odd" id="contact"> 
-            <div class="contact-wrapper" id="contact-form">
+            <div class="contact-wrapper" id="contact-wrapper">
                 <div class="content__header">
                     <h2>Contact Me</h2>
                     <div class="title-sep"></div>
                 </div>
-                <div class="content__container">
-                    <form action="/contact_page.php" class="contact-form">
+                <div class="content__container" id="contact-content">
+                    <p>
+                        Interested in working together?
+                        <br>
+                        Please fill out the form below with your name and details about your project and I'll try
+                        to reply as soon as I can.
+                    </p>
+                    <form method="post" action="/contact_form.php" class="contact-form">
                         <!-- Name and Email -->
                         <div class="identifiers">
-                            <div class="identifier-field"> <!-- Name Entry -->
-                                <label for="name">Name</label>
-                                <input type="text" id="name" class="input-field" name="name" placeholder="Your Name">
+                            <div class="identifier-field input-field"> <!-- Name Entry -->
+                                <input type="text" id="name" class="entry-box" name="name" placeholder="Name/Company">
                             </div>
-                            <div class="identifier-field"> <!-- Email Entry -->
-                                <label for="email">E-mail</label>
-                                <input type="text" id="email" class="input-field" name="email" placeholder="Your E-mail address">
+                            <div class="identifier-field input-field"> <!-- Email Entry -->
+                                <input type="text" id="email" class="entry-box" name="email" placeholder="E-mail address">
                             </div>
                         </div>
-                        <!-- Message Entry -->
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" class="input-field" cols="30" rows="10" placeholder="Your message"></textarea>
+                        <div class="message-field input-field"> <!-- Message Entry -->
+                            <textarea name="message" id="message" class="entry-box" placeholder="Message"></textarea>
+                        </div>
                         <!-- Submit button -->
-                        <input type="submit" value="Send">
+                        <input type="submit" class="submit-button" value="Send">
                     </form>
                 </div>
             </div>
