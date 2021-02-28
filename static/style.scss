@@ -79,6 +79,32 @@ h1, h2, h3, h4 {
 /* Footer */
 .footer {
     background-color: #222222;
-    width: 100vw;
+    display: flex;
     height: 10vh;
+    width: 100vw;
+}
+
+.footer-content {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 100%
+}
+
+.footer-info {
+    p {
+        color: #ddd;
+    }
+}
+
+.footer-icons {
+    i {
+        color: #ddd;
+        font-size: 2em;
+        transition: color 0.25s ease-out;
+
+        &:hover {
+            color: lightseagreen;
+        }
+    }
 }

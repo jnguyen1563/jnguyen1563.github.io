@@ -372,7 +372,7 @@
 
 .responsive-grid a {
   border: 1px solid #ddd;
-  border-radius: 2em;
+  border-radius: 10px;
   color: black;
   text-align: center;
   text-decoration: none;
@@ -413,7 +413,6 @@
 
 /* Contact Form Section */
 #contact {
-  height: 90vh;
   width: 100vw;
 }
 
@@ -499,12 +498,24 @@
   margin: 0 auto;
   padding: 4px 10px;
   border-radius: 4px;
-  -webkit-transition: background-color 0.3 ease-out;
-  transition: background-color 0.3 ease-out;
+  -webkit-transition: background-color 0.25s ease-out;
+  transition: background-color 0.25s ease-out;
 }
 
 .submit-button:hover {
-  background-color: #00aaaa;
+  background-color: #00c8c8;
+}
+
+@media only screen and (max-width: 760px) {
+  .identifiers {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .identifiers .identifier-field {
+    width: 94%;
+  }
 }
 
 /* Fonts */
@@ -585,7 +596,37 @@ h1, h2, h3, h4 {
 /* Footer */
 .footer {
   background-color: #222222;
-  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 10vh;
+  width: 100vw;
+}
+
+.footer-content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.footer-info p {
+  color: #ddd;
+}
+
+.footer-icons i {
+  color: #ddd;
+  font-size: 2em;
+  -webkit-transition: color 0.25s ease-out;
+  transition: color 0.25s ease-out;
+}
+
+.footer-icons i:hover {
+  color: lightseagreen;
 }
 /*# sourceMappingURL=style.css.map */
