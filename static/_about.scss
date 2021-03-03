@@ -35,4 +35,26 @@
         margin-bottom: 1em;
         text-align: center;
     }
+
+    p {
+        margin: 0 0 1em 0;
+    }
+}
+
+.media-icons {
+    text-align: center;
+    a {
+        text-decoration: none;
+    }
+
+    i {
+        color: #333;
+        font-size: 2.5em;
+        margin: 0 0.1m;
+        transition: color 0.25s ease-out;
+
+        &:hover {
+            color: lightseagreen;
+        }
+    }
 }
