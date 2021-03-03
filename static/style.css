@@ -256,6 +256,30 @@
   text-align: center;
 }
 
+#about-text p {
+  margin: 0 0 1em 0;
+}
+
+.media-icons {
+  text-align: center;
+}
+
+.media-icons a {
+  text-decoration: none;
+}
+
+.media-icons i {
+  color: #333;
+  font-size: 2.5em;
+  margin: 0 0.1m;
+  -webkit-transition: color 0.25s ease-out;
+  transition: color 0.25s ease-out;
+}
+
+.media-icons i:hover {
+  color: lightseagreen;
+}
+
 /* Skills Section */
 #skills-main {
   display: -ms-grid;
@@ -371,17 +395,20 @@
 }
 
 .responsive-grid a {
-  border: 1px solid #ddd;
+  border: 1px solid #aaa;
   border-radius: 10px;
+  bottom: 0;
   color: black;
+  position: relative;
   text-align: center;
   text-decoration: none;
-  -webkit-transition: border .25s ease-out;
-  transition: border .25s ease-out;
+  -webkit-transition: border .25s ease-out, bottom .10s ease-out;
+  transition: border .25s ease-out, bottom .10s ease-out;
 }
 
 .responsive-grid a:hover {
   border: 1px solid lightseagreen;
+  bottom: 5px;
 }
 
 .project-content {
@@ -389,11 +416,15 @@
 }
 
 .project-content img {
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  height: 250px;
   width: 100%;
 }
 
 .project-content i {
   font-size: 10em;
+  height: 250px;
 }
 
 .project-content h3, .project-content p {
@@ -490,14 +521,14 @@
 }
 
 .submit-button {
-  font-size: 1.5em;
+  border-radius: 4px;
   border-style: none;
   background-color: rgba(100, 100, 100, 0.5);
   cursor: pointer;
   font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
   margin: 0 auto;
   padding: 4px 10px;
-  border-radius: 4px;
   -webkit-transition: background-color 0.25s ease-out;
   transition: background-color 0.25s ease-out;
 }
