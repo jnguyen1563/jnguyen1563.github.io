@@ -271,7 +271,7 @@
 .media-icons i {
   color: #333;
   font-size: 2.5em;
-  margin: 0 0.1m;
+  margin: 0 0.1em;
   -webkit-transition: color 0.25s ease-out;
   transition: color 0.25s ease-out;
 }
@@ -376,21 +376,21 @@
   display: -ms-grid;
   display: grid;
   gap: 1em;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
 }
 
 @media only screen and (max-width: 1200px) {
   .responsive-grid {
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
 
 @media only screen and (max-width: 760px) {
   .responsive-grid {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
@@ -423,8 +423,11 @@
 }
 
 .project-content i {
-  font-size: 10em;
-  height: 250px;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  font-size: 200px;
+  padding: 25px 0;
+  width: 100%;
 }
 
 .project-content h3, .project-content p {

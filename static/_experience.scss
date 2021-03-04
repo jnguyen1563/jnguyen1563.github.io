@@ -2,16 +2,16 @@
 .responsive-grid {
     display: grid;
     gap: 1em;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
 
     // Desktop-tablet threshold
     @media only screen and (max-width: 1200px) {
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr;
     }
 
     // Tablet-phone threshold
     @media only screen and (max-width: 760px) {
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
     }
 
     a {
@@ -41,8 +41,11 @@
     }
 
     i {
-        font-size: 10em;
-        height: 250px;
+        border-bottom: 1px solid #ddd;
+        border-top: 1px solid #ddd;
+        font-size: 200px;
+        padding: 25px 0;
+        width: 100%;
     }
 
     h3, p {
