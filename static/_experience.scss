@@ -15,17 +15,17 @@
     }
 
     a {
-        border: 1px solid #aaa;
+        border: 2px solid #ddd;
         border-radius: 10px;
         bottom: 0;
         color: black;
         position: relative;
         text-align: center;
         text-decoration: none;
-        transition: border .25s ease-out, bottom .10s ease-out;
+        transition: border .1s ease-out, bottom .10s ease-out;
 
         &:hover {
-            border: 1px solid lightseagreen;
+            border: 2px solid lightseagreen;
             bottom: 5px;
         }
     }

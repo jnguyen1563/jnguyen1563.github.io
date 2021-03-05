@@ -344,7 +344,14 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: summary;
+  margin: 0 10em;
   padding: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+  #skills-summary {
+    margin: 0;
+  }
 }
 
 #programming-languages {
@@ -395,19 +402,19 @@
 }
 
 .responsive-grid a {
-  border: 1px solid #aaa;
+  border: 2px solid #ddd;
   border-radius: 10px;
   bottom: 0;
   color: black;
   position: relative;
   text-align: center;
   text-decoration: none;
-  -webkit-transition: border .25s ease-out, bottom .10s ease-out;
-  transition: border .25s ease-out, bottom .10s ease-out;
+  -webkit-transition: border .1s ease-out, bottom .10s ease-out;
+  transition: border .1s ease-out, bottom .10s ease-out;
 }
 
 .responsive-grid a:hover {
-  border: 1px solid lightseagreen;
+  border: 2px solid lightseagreen;
   bottom: 5px;
 }
 
