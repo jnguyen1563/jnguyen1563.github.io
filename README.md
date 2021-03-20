@@ -4,4 +4,4 @@ This is the website I will be using to talk about myself, my background, and my 
 
 This website is created from scratch without any templates, although I have taken inspiration from other portfolios in my own implementation.  It is written in HTML, CSS, a small bit of JavaScript, and some SCSS for better organization of the styling.
 
-[Direct link to live website](jnguyen.github.io)
+[Direct link to live website](https://jnguyen1563.github.io/)
